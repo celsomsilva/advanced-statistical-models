@@ -1,0 +1,79 @@
+# ==========================
+# --- Python ---
+# ==========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.ipynb_checkpoints
+.env
+.venv
+venv/
+.envrc
+*.egg-info/
+dist/
+build/
+*.log
+
+# ==========================
+# --- R ---
+# ==========================
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj
+.Rout
+.Rapp.history
+.Rprofile
+.Renviron
+*.RDataTmp
+*.RhistoryTmp
+
+# ==========================
+# --- Data files ---
+# ==========================
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.rds
+*.rdata
+*.feather
+*.parquet
+data/
+datasets/
+
+# ==========================
+# --- Jupyter / Colab ---
+# ==========================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.checkpoint.ipynb
+
+# ==========================
+# --- OS / IDE / Misc ---
+# ==========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.bak
+*.swp
+*.tmp
+*.zip
+
+# ==========================
+# --- Plots / Outputs ---
+# ==========================
+*.png
+*.pdf
+*.svg
+*.html
+outputs/
+figures/
+plots/
