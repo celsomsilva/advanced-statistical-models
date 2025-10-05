@@ -6,7 +6,6 @@
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
  
  ---
 
@@ -139,11 +138,12 @@ python Python/04_robust_models/huber_regressor.ipynb
 
 ## References
 
-* Fávero & Belfiore (2023). *Data Science, Analytics and Machine Learning with R*
-* Fávero & Belfiore (2017). *Manual de análise de dados*
+
 * Gelman & Hill (2007) *Data Analysis Using Regression and Multilevel/Hierarchical Models*
 * Fox & Weisberg (2019) *An R Companion to Applied Regression*
 * Venables & Ripley (2002) *Modern Applied Statistics with S*
+* Fávero & Belfiore (2023). *Data Science, Analytics and Machine Learning with R*
+* Fávero & Belfiore (2017). *Manual de análise de dados*
 
 
 ---
