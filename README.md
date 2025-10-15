@@ -5,7 +5,9 @@
 
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
  
  ---
 
@@ -119,20 +121,85 @@ Each exercise is implemented **twice** — once in R and once in Python — demo
 
 <img src="assets/ols_vs_huber.png" width="600">
 
+
 ---
 
-## How to Run
+## Installation & Setup
 
-### R
-```
-Rscript R/04_robust_models/robust_regression_huber.R
-```
+Follow the steps below to set up your environment correctly.
 
-### Python
+### 1. Clone the repository
 
 ```
-python Python/04_robust_models/huber_regressor.ipynb
+git clone https://github.com/your-username/walmart-hlm.git
+cd walmart-hlm
 ```
+
+### 2. Install Miniconda or Mamba (if you don’t have it yet)
+
+* [Download Miniconda](https://docs.conda.io/en/latest/miniconda.html) or
+* [Install Mamba](https://mamba.readthedocs.io/en/latest/installation.html) (faster, recommended).
+
+### 3. Create the environment
+
+```
+mamba env create -f environment.yml
+# or
+conda env create -f environment.yml
+```
+
+### 4. Activate the environment
+
+```
+conda activate walmart-hlm
+```
+
+### 5. (Optional) Install R and `lme4` for GLMM models
+
+If you plan to use `pymer4` for Negative Binomial GLMM models, make sure R and `lme4` are installed:
+
+#### On Linux / macOS:
+
+```
+# Install R
+sudo apt-get update && sudo apt-get install -y r-base
+# or use brew on macOS
+brew install r
+
+# Install lme4 in R
+R -e "install.packages('lme4', repos='https://cloud.r-project.org')"
+```
+
+#### On Windows:
+
+1. Install [R](https://cran.r-project.org/).
+2. Open R and run:
+
+```
+install.packages("lme4", repos="https://cloud.r-project.org")
+```
+
+> Note: `pymer4` requires `lme4` under the hood to run GLMMs.
+> If you don't want to use R, you can rely on Python’s `statsmodels` for OLS and GLM models only.
+
+### 6. Verify the installation
+
+```
+python -c "import numpy, pandas, statsmodels; print('Python stack OK')"
+R -q -e "library(lme4); cat('R stack OK\n')"
+```
+
+**Tips for best practice**:
+
+* Always work inside the conda environment — this ensures your results are reproducible.
+* If you make changes to `environment.yml`, update the environment with:
+
+```
+mamba env update -f environment.yml --prune
+```
+
+* For collaborators: they only need to run steps 1–4 to reproduce your environment.
+
 
 ---
 
