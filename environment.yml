@@ -1,0 +1,26 @@
+name: walmart-hlm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core scientific stack
+  - python>=3.10
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.11
+  - matplotlib>=3.7
+
+  # Statistical modeling
+  - statsmodels>=0.14
+  - patsy>=0.5
+
+  # GLMM / interface com R
+  - pip
+  - pip:
+      - pymer4>=0.8.0
+      - tqdm>=4.65
+      - click>=8.1
+      - pyyaml>=6.0
+      - jupyterlab>=4.0
+      - ipykernel>=6.29
+

@@ -1,0 +1,24 @@
+# Core scientific stack
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+
+# Statistical modeling
+statsmodels>=0.14
+patsy>=0.5
+
+# Mixed models / GLMM
+pymer4>=0.8.0  # interface com R/lme4 (opcional, se quiser glmer no python)
+# OU (se preferir apenas python)
+# linearmodels>=5.0
+
+# Utils & reproducibility
+tqdm>=4.65
+jupyterlab>=4.0
+ipykernel>=6.29
+
+# Optional: for CLI + config
+click>=8.1
+pyyaml>=6.0
+
